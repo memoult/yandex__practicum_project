@@ -136,7 +136,7 @@ h1 {
     align-items: center;
     max-width: 364px;
     height: 100%;
-    border-radius: 12px;
+    border-radius: 12px 12px 12px 12px;
     background: white;
 }
 
@@ -208,11 +208,15 @@ footer .nav-link {
     .header-container,
     header {
         display: flex;
-        width: 375px;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 24px;
         box-sizing: border-box;
+    }
+
+    .sneaker {
+        width: 343px;
     }
 
     .sneakers {
@@ -221,15 +225,23 @@ footer .nav-link {
         justify-content: center;
         align-items: center;
         align-self: stretch;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin: 32px 0 0;
+        border-radius: 12px 12px 12px 12px;
     }
 
     .subtitle {
-        padding-left: 24px;
+        gap: 32px;
+        padding: 32px 0 32px 0;
+        padding: 0 16px;
+        padding-left: 16px;
+        font-size: 32px;
     }
 
     .footer-content {
         display: flex;
-        width: 375px;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 24px;
