@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* задание шрифта всей странице */
+body {
+
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+body {
+    background-color: #F1F1F1;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* стили для главного контейнера */
+
+.main__img {
+    width: 100%;
+}
+
+.main {
+    /* padding: 48px; */
+    max-width: 1140px;
+    margin: 32px auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+
+.main__title {
+    color: #121723;
+    font-family: Anonymous Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    padding-top: 32px;
+}
+
+.sneaker {
+    width: 1140px;
+    padding: 48px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 32px;
+    border-radius: 50px 50px 50px 50px;
+    margin-bottom: 32px;
+}
+
+.main__subtitle {
+    color: #121723;
+    font-family: Anonymous Pro;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.sneaker__info {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+a {
+    text-decoration: none;
+}
+
+.about__sneaker {
+    margin-bottom: 24px;
+    color: var(--black, #121723);
+    font-family: 'Anonymous Pro';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sneaker__info_cross {
+    gap: 32px;
+    align-self: stretch;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1044px;
+    height: 784px;
+}
+
+.sneakers___info {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+
+.line {
+    height: 1px;
+    color: #121723;
+}
+
+.sneaker__title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+    background-color: #fff;
+}
+
+.sneaker__info {
+    flex: 1;
+}
+
+.sneaker__info__cross {
+    flex: 1;
+}
+
+
+p {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+}
+
+.main__content {
+    display: flex;
+    gap: 32px;
+
+    background-color: #fff;
+}
+
+
+/* стили для хедера(шапки) сайта */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #A1A6B4;
+    background: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 24px 0 24px;
+}
+
+.logo-link {
+    max-width: 215px;
+}
+
+/* стили для ссылок в хедере и футере */
+nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    color: #121723;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #121723;
+}
+
+/* стили для футера */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 32px 0;
+}
+
+.footer__logo-link {
+    max-width: 300px;
+    width: 100%;
+}
+
+footer .nav-link {
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
+    border-top: 1px solid #A1A6B4;
+}
+
+.copyright-text {
+    color: #A1A6B4;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0;
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .header-container,
+    header {
+        display: flex;
+        width: 375px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .sneaker {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 360px;
+        padding: 0 24px;
+        align-items: center;
+        margin-bottom: 24px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+
+    .footer-content {
+        display: flex;
+        width: 375px;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        box-sizing: border-box;
+    }
+
+    .sneak__informat {
+        color: var(--black, #121723);
+        text-align: right;
+        font-family: Anonymous Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .sneaker__title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__title {
+        font-size: 32px;
+    }
+
+    .sneaker__info {
+        color: var(--black, #121723);
+        font-family: Anonymous Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 150% */
+    }
+
+    .main__subtitle {
+        font-size: 20px;
+    }
+
+    .main__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+}
