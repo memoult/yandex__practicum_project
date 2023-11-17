@@ -64,7 +64,6 @@ body {
     align-items: center;
     column-gap: 32px;
     border-radius: 50px 50px 50px 50px;
-    margin-bottom: 32px;
 }
 
 .main__subtitle {
@@ -248,7 +247,7 @@ footer .nav-link {
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 768px){
 
     .header-container,
     header {
@@ -272,7 +271,8 @@ footer .nav-link {
         padding: 0 24px;
         align-items: center;
         margin-bottom: 24px;
-        border-radius: 50px 50px 50px 50px;
+        margin-top: 24px;
+        border-radius: 12px 12px 12px 12px;
     }
 
 
